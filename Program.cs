@@ -1,0 +1,32 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Program19
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            char c = 'b';
+            bool res = c > 'a';
+
+            Console.WriteLine($"'b' > 'a' = {res}"); // True
+
+            // Вывод кодов символов
+            Console.WriteLine($"Код символа 'a': {(int)'a'}"); // 97
+            Console.WriteLine($"Код символа 'b': {(int)'b'}"); // 98
+
+            // Дополнительные примеры, чтобы показать порядок
+            Console.WriteLine($"'A' код = {(int)'A'}"); // 65
+            Console.WriteLine($"'Z' код = {(int)'Z'}"); // 90
+            Console.WriteLine($"'0' код = {(int)'0'}"); // 48
+            Console.WriteLine($"'9' код = {(int)'9'}"); // 57
+
+            // Пример сравнения разных регистров
+            Console.WriteLine($"'a' > 'A' = {('a' > 'A')}"); // True, потому что 97 > 65
+        }
+    }
+}
